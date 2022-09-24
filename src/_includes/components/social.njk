@@ -1,4 +1,8 @@
-<div class="social">
-    <img src="/assets/images/???" alt="???" class="social-img">
-    <span>???</span>
-</div>
+{% for net in socialData %}
+    <div class="social">
+        <a href="{{net.url}}">
+            <img src="/assets/images/{{ net.social.toLowerCase() }}.png" alt="{{net.social}} icon" class="social-img">
+            <span>{{net.user}}</span>
+        </a>
+    </div>
+{% endfor %}

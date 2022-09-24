@@ -1,0 +1,27 @@
+{
+  "name": "tatoberres",
+  "version": "1.0.0",
+  "description": "Tatoberres dev personal site",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix 'src/**'",
+    "clean": "rm -rf dist",
+    "eleventy:default": "npx eleventy",
+    "serve": "light-server -c .lightserverrc",
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "eleventy:watch": "npx eleventy --watch",
+    "dev": "npm-run-all clean eleventy:default --parallel eleventy:watch start --print-label"
+  },
+  "keywords": [],
+  "author": "Bertha Torres",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "eslint": "^8.24.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.0.1"
+  }
+}

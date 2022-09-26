@@ -16,12 +16,14 @@ body {
 }
 .social-container {
     grid-template-columns: repeat(auto-fit, minmax(52px, 1fr));
-    margin-top: 5vh;
+    margin-top: 7vh;
 }
-.social-img-svg{
+.social-a svg {
     fill: orangered;
+    width: 52px;
+    height: 52px;
 }
-.social-img:hover {
+.social-a:hover {
     opacity: 1;
 }
 @media screen and (min-width: 600px) {

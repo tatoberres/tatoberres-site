@@ -1,8 +1,8 @@
 {% for net in socialData %}
     <div class="social">
-        <a href="{{net.url}}">
-            <img src="/assets/images/{{ net.social.toLowerCase() }}.png" alt="{{net.social}} icon" class="social-img">
-            <span>{{net.user}}</span>
+        <a href="{{net.url}}" target="_blank" rel="noreferrer">
+            <img src="/assets/images/{{ net.social}}.svg" alt="{{net.social}} icon for {{ net.user }}" class="social-img w-10 opacity-30">
         </a>
+
     </div>
 {% endfor %}

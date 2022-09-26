@@ -13,5 +13,25 @@
         "social": "Twitter",
         "user": "tatoberres",
         "url": "https://twitter.com/tatoberres"
+    },
+    {
+        "social": "CodePen",
+        "user": "tatoberres",
+        "url": "https://codepen.io/tatoberres"
+    },
+    {
+        "social": "CodinGame",
+        "user": "tatoberres",
+        "url": "https://www.codingame.com/profile/25cce473a12e757d274722c69ac4a3ff8480594"
+    },
+    {
+        "social": "FreeCodeCamp",
+        "user": "tatoberres",
+        "url": "https://www.freecodecamp.org/tatoberres"
+    },
+    {
+        "social": "Mail",
+        "user": "tatoberres",
+        "url": "bertha@tatoberres.com"
     }
 ]

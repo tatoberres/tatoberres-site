@@ -3,10 +3,16 @@ title: Bertha Torres web
 description: web page presentation tatoberres
 layout: "base.njk"
 ---
-<img src="/assets/images/btorres.jpg" alt="profile image">
-<h1>Bertha Torres</h1>
-<h2>jr fullstack web dev</h2>
-<div class="social-container">
-    {% include 'components/social.njk' %}
+<div class="container m-auto flex flex-col">
+    <div class="profile-container grid-cols-none grid justify-items-center items-center my-auto">
+        <img class="profile-image w-full max-w-xs rounded-full" src="/assets/images/btorres.jpg" alt="profile image">
+        <div class="profile-container-name">
+            <h1 class="text-7xl font-extrabold text-center">Bertha Torres</h1>
+            <h2 class="profile-subtitle font-thin text-center">jr fullstack web dev</h2>
+        </div>
+    </div>
+    <div class="social-container grid gap-1 justify-items-center items-center">
+        {% include 'components/social.njk' %}
+    </div>
 </div>
 

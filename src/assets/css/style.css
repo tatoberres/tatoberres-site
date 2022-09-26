@@ -1,8 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body {
+    grid-template-rows: 1fr min-content;
+}
+.container {
+    max-width: 800px;
+    margin-top: 15vh;
+}
+.profile-image {
+    min-width: 8rem;
+}
+.profile-subtitle {
+    font-size: 1.75rem;
+}
 .social-container {
-    display: flex;
-    border: 1px solid red;
+    grid-template-columns: repeat(auto-fit, minmax(52px, 1fr));
+    margin-top: 5vh;
+}
+.social-img-svg{
+    fill: orangered;
+}
+.social-img:hover {
+    opacity: 1;
+}
+@media screen and (min-width: 600px) {
+    .profile-container {
+        grid-template-columns: 30% auto;
+        justify-items: start;
+    }
+    .profile-container-name {
+        margin-left: 1.5rem;
+    }
+    .profile-container-name h1, .profile-container-name h2 {
+        text-align: left;
+    }
 }

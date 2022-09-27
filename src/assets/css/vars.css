@@ -1,0 +1,14 @@
+:root {
+    --back-bagrnd-1: #FBDA61;
+    --gradient-1-brand:#FBDA61;
+    --gradient-1-brand-secondary: #FF5ACD;
+    --gradient-1: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+
+    --some-black: #34495e;
+}
+.gradient__brand-secondary {
+    stop-color: var(--gradient-1-brand-secondary);
+}
+.gradient__brand {
+    stop-color: var(--gradient-1-brand);
+}

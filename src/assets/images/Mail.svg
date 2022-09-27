@@ -1,8 +1,11 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  viewBox="0 0 200.000000 200.000000"
  preserveAspectRatio="xMidYMid meet" class="social-img-svg">
-
-<g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
+    <linearGradient x1="100%" y1="0" x2="0" y2="100%" id="gradient">
+        <stop class="gradient__brand-secondary" offset="0"/>
+        <stop class="gradient__brand" offset="100%"/>
+    </linearGradient>
+<g fill="url(#gradient)" transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
 stroke="none">
 <path d="M284 1659 c-18 -5 -46 -22 -64 -39 -25 -23 -31 -36 -28 -62 3 -32 18
 -42 383 -271 209 -130 391 -240 404 -244 14 -3 36 -2 50 4 48 18 746 463 765

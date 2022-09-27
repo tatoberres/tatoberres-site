@@ -1,8 +1,7 @@
 {% for net in socialData %}
      {% set url = ['../../assets/images/', net.social, '.svg' ]%}
     <div class="social">
-        <a href="{{net.url}}" target="_blank" rel="noreferrer" class="social-a w-10 opacity-30">
-{#            <img src="/assets/images/{{ net.social}}.svg" alt="{{net.social}} icon for {{ net.user }}" class="social-img w-10 opacity-30">#}
+        <a href="{{net.url}}" target="_blank" rel="noreferrer" class="social-a w-10">
              {% include url | join("") %}
         </a>
     </div>

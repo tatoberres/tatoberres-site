@@ -1,8 +1,13 @@
+@import url("./text.css");
+@import url("./title.css");
+@import url("./vars.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
     grid-template-rows: 1fr min-content;
+    color: var(--some-black);
 }
 .container {
     max-width: 800px;
@@ -19,12 +24,12 @@ body {
     margin-top: 7vh;
 }
 .social-a svg {
-    fill: orangered;
     width: 52px;
     height: 52px;
+    transition: 0.3s ease;
 }
-.social-a:hover {
-    opacity: 1;
+.social-a svg:hover {
+    opacity: 0.6;
 }
 @media screen and (min-width: 600px) {
     .profile-container {

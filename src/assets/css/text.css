@@ -1,0 +1,7 @@
+.text-gradient {
+    background: var(--gradient-1);
+    color: var(--gradient-1-brand-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 2.5s;
+}

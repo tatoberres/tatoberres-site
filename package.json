@@ -6,11 +6,11 @@
   "scripts": {
     "tailw": "npx tailwindcss -i ./public/assets/css/style.css -o ./public/output.css --watch",
     "lint": "eslint --fix 'src/**'",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf public",
     "eleventy:default": "npx eleventy",
     "serve": "light-server -c .lightserverrc",
     "start": "eleventy --serve",
-    "build": "eleventy",
+    "build": "npm run clean npx eleventy --print-label",
     "eleventy:watch": "npx eleventy --watch",
     "dev": "npm-run-all clean eleventy:default --parallel eleventy:watch tailw start --print-label"
   },

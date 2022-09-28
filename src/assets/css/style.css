@@ -1,4 +1,5 @@
 @import url("./text.css");
+@import url("./profile-photo.css");
 @import url("./title.css");
 @import url("./vars.css");
 @tailwind base;
@@ -10,32 +11,30 @@ body {
     color: var(--some-black);
 }
 .container {
-    max-width: 800px;
+    max-width: 700px;
     margin-top: 15vh;
-}
-.profile-image {
-    min-width: 8rem;
 }
 .profile-subtitle {
     font-size: 1.75rem;
 }
 .social-container {
-    grid-template-columns: repeat(auto-fit, minmax(52px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(52px, 93px));
+    grid-auto-rows: 93px;
+    justify-content: space-evenly;
     margin-top: 7vh;
+    height: 93px;
 }
 .social-a svg {
     width: 52px;
     height: 52px;
-    transition: 0.3s ease;
+    transition: 0.1s ease;
 }
-.social-a svg:hover {
+.social-a:hover svg{
     opacity: 0.6;
+    width: 100%;
+    height: 100%;
 }
-@media screen and (min-width: 600px) {
-    .profile-container {
-        grid-template-columns: 30% auto;
-        justify-items: start;
-    }
+@media screen and (min-width: 720px) {
     .profile-container-name {
         margin-left: 1.5rem;
     }

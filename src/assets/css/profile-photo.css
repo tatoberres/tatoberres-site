@@ -1,0 +1,41 @@
+.profile-image {
+    cursor: pointer;
+    transform-style: preserve-3d;
+    position: relative;
+    display: flex;
+    transition: 0.4s;
+    width: 200px;
+    height: 200px;
+}
+.profile-image:hover {
+}
+.profile-image.side-up {
+    transform: rotateY(180deg);
+}
+.face-up {
+    position: absolute;
+    backface-visibility: hidden;
+}
+.face-down {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    background: var(--gradient-1);
+    color: var(--some-black);
+    height: 200px;
+    backface-visibility: hidden;
+    font-size: 13px;
+}
+@media screen and (min-width: 720px) {
+    .profile-image {
+        min-width: 8rem;
+        width: 240px;
+        height: 240px;
+    }
+    .face-down {
+        height: 240px;
+        font-size: 17px;
+    }
+}

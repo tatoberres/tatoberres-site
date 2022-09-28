@@ -4,21 +4,26 @@ description: web page presentation tatoberres
 layout: "base.njk"
 ---
 <div class="container m-auto flex flex-col">
-    <div class="profile-container grid-cols-none grid justify-items-center items-center my-auto">
-        <img class="profile-image w-full max-w-xs rounded-full" src="/assets/images/btorres.jpg" alt="profile image">
+    <div class="profile-container items-center my-auto">
+        <div class="profile-image">
+            <img class="face-up w-full max-w-xs rounded-full" src="/assets/images/btorres.jpg" alt="profile image">
+            <span class="face-down rounded-full text-l p-6">Coming from a literature & teaching background, I decided to embrace my passion, and learn web dev.</span>
+        </div>
         <div class="profile-container-name">
             <h1 class="text-6xl font-extrabold text-center">
-                <a href="https://github.com/tatoberres">
-                    <span class="name-3 text-gradient">/ tatoberres /</span>
+                <a href="https://github.com/tatoberres" target="_blank" rel="noreferrer">
+                    <span class="name-3 text-gradient">&nbsp;&nbsp;tatoberres&nbsp;&nbsp;</span>
                 </a>
-                <span class="name-1">Bertha/</span>
-                <span class="name-2">/Torres</span>
+                <span class="name-1">Bertha</span>
+                <span class="name-2">Torres</span>
+                <span class="name-11 text-gradient">/</span>
+                <span class="name-22 text-gradient">/</span>
 
             </h1>
             <h2 class="profile-subtitle font-thin text-center">jr fullstack web dev</h2>
         </div>
     </div>
-    <div class="social-container grid gap-1 justify-items-center items-center">
+    <div class="social-container grid gap-2 justify-items-center items-center">
         {% include 'components/social.njk' %}
     </div>
 </div>

@@ -1,4 +1,6 @@
-<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 2083 2083" xmlns="http://www.w3.org/2000/svg" class="social-img-svg">
+<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+     viewBox="0 0 2083 2083" xmlns="http://www.w3.org/2000/svg" class="social-img-svg"
+     width="144.000000pt" height="144.000000pt">
     <linearGradient x1="0" y1="0" x2="100%" y2="100%" id="gradient">
         <stop class="gradient__brand-secondary" offset="0"/>
         <stop class="gradient__brand" offset="100%"/>

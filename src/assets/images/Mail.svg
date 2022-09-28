@@ -1,7 +1,7 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  viewBox="0 0 200.000000 200.000000"
  preserveAspectRatio="xMidYMid meet" class="social-img-svg">
-    <linearGradient x1="100%" y1="0" x2="0" y2="100%" id="gradient">
+    <linearGradient x1="0" y1="0" x2="100%" y2="100%" id="gradient">
         <stop class="gradient__brand-secondary" offset="0"/>
         <stop class="gradient__brand" offset="100%"/>
     </linearGradient>

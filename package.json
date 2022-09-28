@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "tailw": "npx tailwindcss -i ./public/assets/css/style.css -o ./public/output.css --watch",
+    "tail": "npx tailwindcss -i ./public/assets/css/style.css -o ./public/output.css",
     "lint": "eslint --fix 'src/**'",
     "clean": "rm -rf public",
     "eleventy:default": "npx eleventy",
     "serve": "light-server -c .lightserverrc",
     "start": "eleventy --serve",
-    "build": "run-s clean eleventy:default --print-label",
+    "build": "run-s clean eleventy:default tail --print-label",
     "eleventy:watch": "npx eleventy --watch",
     "dev": "npm-run-all clean eleventy:default --parallel eleventy:watch tailw start --print-label"
   },

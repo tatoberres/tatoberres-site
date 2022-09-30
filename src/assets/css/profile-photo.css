@@ -3,11 +3,26 @@
     transform-style: preserve-3d;
     position: relative;
     display: flex;
-    transition: 0.4s;
+    transition: 0.5s;
     width: 200px;
     height: 200px;
+    border-radius: 50%;
+    background-image: var(--gradient-2);
+    background-size: 300% 300%;
 }
 .profile-image:hover {
+    animation: gradient-move 2s ease alternate infinite;
+}
+@keyframes gradient-move {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
 }
 .profile-image.side-up {
     transform: rotateY(180deg);
@@ -15,6 +30,10 @@
 .face-up {
     position: absolute;
     backface-visibility: hidden;
+    transition: 1s;
+}
+.face-up:hover {
+    opacity: 0.4;
 }
 .face-down {
     position: absolute;

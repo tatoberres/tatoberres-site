@@ -7,6 +7,10 @@
 .name-11, .name-22, .profile-container h1 a {
     display: none;
 }
+.profile-subtitle {
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 720px) {
     .profile-container {
         grid-template-rows: min-content;

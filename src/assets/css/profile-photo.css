@@ -45,7 +45,7 @@
     color: var(--some-black);
     height: 200px;
     backface-visibility: hidden;
-    font-size: 13px;
+    font-size: 15px;
 }
 @media screen and (min-width: 720px) {
     .profile-image {
@@ -56,5 +56,10 @@
     .face-down {
         height: 240px;
         font-size: 17px;
+    }
+}
+@media (prefers-reduced-motion) {
+    .profile-image:hover {
+        animation: none;
     }
 }

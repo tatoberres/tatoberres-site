@@ -1,7 +1,22 @@
 .text-gradient {
     background: var(--gradient-1);
-    color: var(--gradient-1-brand-secondary);
+    color: var(--gradient-1-brand);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 2.5s;
+}
+/*.text-gradient:hover{*/
+/*    background: var(--gradient-11);*/
+/*    color: var(--gradient-1-brand-secondary);*/
+/*    -webkit-background-clip: text;*/
+/*    transition: 1s ease-in-out;*/
+/*}*/
+.text-link {
+    text-decoration: underline;
+}
+.text-link:hover{
+    background: var(--gradient-1);
+    color: var(--gradient-1-brand);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

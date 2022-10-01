@@ -2,8 +2,8 @@
     --gradient-1-brand:#FBDA61;
     --gradient-1-brand-secondary: #FF5ACD;
     --gradient-1: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    --gradient-11: linear-gradient(45deg, #FF5ACD 0%, #FBDA61 100%);
     --gradient-2: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 50%, #FBDA61 100%);
-
     --some-black: #34495e;
 }
 .gradient__brand-secondary {

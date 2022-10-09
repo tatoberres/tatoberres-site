@@ -26,6 +26,7 @@
 }
 .profile-image.side-up {
     transform: rotateY(180deg);
+    background-image: none;
 }
 .face-up {
     position: absolute;
